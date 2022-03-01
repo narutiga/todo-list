@@ -1,6 +1,6 @@
-const taskValue = documet.getElementsByClassName('task_value')[0];
-const taskSubmit= documet.getElementsByClassName('task_submit')[0];
-const taskList = documet.getElementsByClassName('task_list')[0];
+const taskValue = document.getElementsByClassName('task_value')[0];
+const taskSubmit= document.getElementsByClassName('task_submit')[0];
+const taskList = document.getElementsByClassName('task_list')[0];
 
 //追加ボタンを作成
 const addTasks = (task) => {
