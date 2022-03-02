@@ -12,9 +12,9 @@ const addTasks = (task) => {
     //タスクに削除ボタンを付与
     const deleteButton = document.createElement('button');
     deleteButton.innerHTML = 'Delete';
-    listItem.appendChild(deketeButton);
+    listItem.appendChild(deleteButton);
 
-    //削除ボタンをクリックし、イベントを発動（タスクが削除）
+    //削除ボタンをクリックし、イベントを発動（タスクを削除）
     deleteButton.addEventListener('click', evt => {
         evt.preventDefault();
         deleteTasks(deleteButton);
@@ -22,8 +22,8 @@ const addTasks = (task) => {
 };
 
 //削除ボタンにタスクを消す機能を付与
-const deleteTasks = (deletebutton) => {
-    const chosenTask = deleteButton.closet('li');
+const deleteTasks = (deleteButton) => {
+    const chosenTask = deleteButton.closest('li');
     taskList.removeChild(chosenTask);
 };
 
